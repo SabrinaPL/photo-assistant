@@ -7,7 +7,7 @@
   },
   "scripts": {
     "dev": "vite",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "keywords": [],
   "author": "Sabrina Prichard-Lybeck <sp223kz@student.lnu.se>",
@@ -15,5 +15,8 @@
   "description": "",
   "dependencies": {
     "vite": "^5.4.5"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0"
   }
 }

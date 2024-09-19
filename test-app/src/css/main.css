@@ -1,0 +1,16 @@
+body {
+  font-size: 18px;
+  color: cornsilk;
+  background-color: black;
+}
+
+#photoUrl-form-container {
+  width: 25%; 
+  text-align: center;
+  color: black;
+  background-color: cornsilk;
+  opacity: 75%; 
+  margin-top: 1rem;
+  padding: 5rem;
+  border-radius: 0.5rem; 
+}

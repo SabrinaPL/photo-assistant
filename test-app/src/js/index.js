@@ -11,6 +11,8 @@ photoForm.addEventListener('submit', (event) => {
   const editMethod = 'Contrast'
   const editValue = '150%'
 
+  
+
   const photoHandler = new PhotoHandler()
 
   photoHandler.addPhoto(editMethod, photoUrl, editValue)

@@ -10,7 +10,11 @@
     "dev": "vite",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js"
   },
-  "keywords": ["photo editor", "photo sorting", "photo gallery"],
+  "keywords": [
+    "photo editor",
+    "photo sorting",
+    "photo gallery"
+  ],
   "author": "Sabrina Prichard-Lybeck <sp223kz@student.lnu.se>",
   "license": "ISC",
   "description": "Photo Assistant is a library that offers simple photo editing, photo sorting (by metadata) and photo displaying (grid gallery) functionality.",

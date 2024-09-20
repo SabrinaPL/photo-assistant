@@ -9,7 +9,7 @@ photoForm.addEventListener('submit', (event) => {
   console.log('Photo has been submitted')
   const photoUrl = document.getElementById('photoUrl-input').value
   const editMethod = 'Contrast'
-  const editValue = '50%'
+  const editValue = '150%'
 
   const photoHandler = new PhotoHandler()
 

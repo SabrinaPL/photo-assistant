@@ -2,18 +2,19 @@
 
 import { PhotoHandler } from "./photoHandler"
 
-const photoForm = document.getElementById('photoUrl-form')
+const images = document.querySelectorAll('img')
 
-photoForm.addEventListener('submit', (event) => {
-  event.preventDefault()
-  console.log('Photo has been submitted')
-  const photoUrl = document.getElementById('photoUrl-input').value
-  const editMethod = 'Contrast'
-  const editValue = '150%'
+for (let i = 0; i < images.length; i++) {
+  images[i].addEventListener('click', (event) => {
+    console.log('Image has been clicked')
+    console.log(images[i].src)
 
-  
+    const photo = images[i]
+    const editMethod = 'Contrast'
+    const editValue = '130%'
 
-  const photoHandler = new PhotoHandler()
-
-  photoHandler.addPhoto(editMethod, photoUrl, editValue)
-})
+    const photoHandler = new PhotoHandler()
+    photoHandler.addPhoto(editMethod, photo, editValue)
+  }
+  )
+}

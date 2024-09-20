@@ -8,11 +8,8 @@ export class PhotoHandler {
   addPhoto(editMethod, photoUrl, editValue) {
     const photoEdit = new PhotoEdit()
 
-    const photo = photoEdit.editPhoto(editMethod, photoUrl, editValue)
+    const editedPhoto = photoEdit.editPhoto(editMethod, photoUrl, editValue)
 
-    console.log('Photo in addPhoto method ' + photo)
-
-    const photoContainer = document.getElementById('photo')
-    photoContainer.appendChild(photo)
+    console.log('Edited photo: ' + editedPhoto)
   }
 }

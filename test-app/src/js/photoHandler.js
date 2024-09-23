@@ -1,15 +1,28 @@
-import { PhotoEdit } from "../../../lib/PhotoAssistant/PhotoEdit"
+import { PhotoFilter } from '../../../lib/photoAssistant/photoFilter.js'
 
 export class PhotoHandler {
+  #clickedImages = []
+
+  /**
+   * Method to add clicked images to an image array.
+   *
+   * @param {*} image
+   */
+  addClickedImagesToArray (image) {
+    this.#clickedImages.push(image)
+
+    console.log(this.#clickedImages)
+  }
+
   /** 
-   * Method to add edited photo to the DOM for display.
+   * Method to add filter to image in the DOM.
    * 
    */
-  addPhoto(editMethod, photoUrl, editValue) {
-    const photoEdit = new PhotoEdit()
+  addFilter (filterMethod, editValue) {
+    const photoFilter = new PhotoFilter()
 
-    const editedPhoto = photoEdit.editPhoto(editMethod, photoUrl, editValue)
-
-    console.log('Edited photo: ' + editedPhoto)
+    this.#clickedImages.forEach((image) => {
+      photoFilter.filterPhoto(filterMethod, image, editValue)
+    })
   }
 }

@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "main": "lib/index.js",
   "type": "module",
+  "eslintConfig": {
+    "extends": "@lnu"
+  },
   "directories": {
     "lib": "lib"
   },
@@ -20,6 +23,7 @@
   "description": "Photo Assistant is a library that offers simple photo editing, photo sorting (by metadata) and photo displaying (grid gallery) functionality.",
   "devDependencies": {
     "jest": "^29.7.0",
-    "vite": "^5.4.5"
+    "vite": "^5.4.5",
+    "@lnu/eslint-config": "^1.1.10"
   }
 }

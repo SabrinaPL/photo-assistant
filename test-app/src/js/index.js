@@ -1,20 +1,22 @@
-// Starting point of application.
+// Starting point of the application.
 
-import { PhotoHandler } from "./photoHandler"
+import { PhotoHandler } from './photoHandler.js'
 
 const images = document.querySelectorAll('img')
+
+const photoHandler = new PhotoHandler()
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener('click', (event) => {
     console.log('Image has been clicked')
-    console.log(images[i].src)
+
+    photoHandler.addClickedImagesToArray(images[i])
 
     const photo = images[i]
-    const editMethod = 'Contrast'
-    const editValue = '130%'
+    const filterMethod = 'Contrast'
+    const filterValue = '150%'
 
-    const photoHandler = new PhotoHandler()
-    photoHandler.addPhoto(editMethod, photo, editValue)
+    photoHandler.addFilter(filterMethod, photo, filterValue)
   }
   )
 }

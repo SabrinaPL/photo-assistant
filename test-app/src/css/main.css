@@ -4,17 +4,24 @@ body {
   background-color: black;
 }
 
-#photoUrl-form-container {
-  width: 25%; 
-  text-align: center;
-  color: black;
-  background-color: cornsilk;
-  opacity: 75%; 
-  margin-top: 1rem;
-  padding: 5rem;
-  border-radius: 0.5rem; 
+img {
+  width: 50%; 
+  margin: 0.5rem;
 }
 
-img {
-  width: 50%;
+img:hover {
+  opacity: 60%;
 }
+
+#wrapper, 
+h1,
+h2 {
+  text-align: center;
+}
+
+#choice-menu-container {
+  margin-bottom: 3rem;
+}
+
+
+

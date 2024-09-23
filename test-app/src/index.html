@@ -11,25 +11,40 @@
 
 <body>
   <h1>Photo Assistant</h1>
+  <h2>Adds filters to images to help visualize CSS filter effects in an instant</h2>
 
-  <!--- <div id="photoUrl-form-container">
-    <form id="photoUrl-form">
-      <label for="photoUrl-input">Please enter the url of the photo you wish to edit:</label><br><br>
-      <input type="text" id="photoUrl-input"><br><br>
-      <button class="btn">Enter</button>
-    </form>
-  </div> -->
+  <div id="wrapper">
+    <div id="choice-menu-container">
+      <form id="choice-menu">
+        <p>Choose which filter effect you wish to apply and select image to add the filter:</p><br><br>
+        <input type="radio" id="exposure" checked>
+        <label for="exposure">Exposure</label>
+        <input type="radio" id="contrast">
+        <label for="contrast">Contrast</label>
+        <input type="radio" id="sepia">
+        <label for="sepia">Sepia</label>
+        <input type="radio" id="grayscale">
+        <label for="grayscale">Grayscale</label>
+        <input type="radio" id="opacity">
+        <label for="opacity">Opacity</label>
+        <input type="radio" id="blur">
+        <label for="blur">Blur</label><br><br>
+        <input type="range" min="1" max="100" value="50" class="slider" id="filterValue"><br><br>
+        <button type="submit">Apply filter</button>
+      </form>
+    </div>
 
-  <div id="photo-container">
-    <img src="images/arashiyama.jpg" alt="People on a street in Arashiyama, Japan">
-    <img src="images/deer.jpg" alt="Deer grooming each other">
-    <img src="images/fushimiinari.jpg" alt="Fushimi Inari temple, Japan">
-    <img src="images/kyoto.jpg" alt="Pagoda in Kyoto, Japan in sunset">
-    <img src="images/monkey.jpg" alt="A monkey">
-    <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
-    <img src="images/tokyo.jpg" alt="Shibuya crossing in Tokyo, Japan">
-    <img src="images/yabusame.jpg" alt="Japanese horseback archer">
-    <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
+    <div id="photo-container">
+      <img src="images/arashiyama.jpg" alt="People on a street in Arashiyama, Japan">
+      <img src="images/deer.jpg" alt="Deer grooming each other">
+      <img src="images/fushimiinari.jpg" alt="Fushimi Inari temple, Japan">
+      <img src="images/kyoto.jpg" alt="Pagoda in Kyoto, Japan in sunset">
+      <img src="images/monkey.jpg" alt="A monkey">
+      <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
+      <img src="images/tokyo.jpg" alt="Shibuya crossing in Tokyo, Japan">
+      <img src="images/yabusame.jpg" alt="Japanese horseback archer">
+      <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
+    </div>
   </div>
 </body>
 

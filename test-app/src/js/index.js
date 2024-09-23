@@ -10,13 +10,13 @@ for (let i = 0; i < images.length; i++) {
   images[i].addEventListener('click', (event) => {
     console.log('Image has been clicked')
 
-    photoHandler.addClickedImagesToArray(images[i])
+    photoHandler.runPhotoHandler(images[i])
 
-    const photo = images[i]
+    // Added for testing.
     const filterMethod = 'Contrast'
     const filterValue = '150%'
 
-    photoHandler.addFilter(filterMethod, photo, filterValue)
+    photoHandler.addFilter(filterMethod, filterValue)
   }
   )
 }

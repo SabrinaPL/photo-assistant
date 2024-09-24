@@ -4,14 +4,14 @@ test('Tests filter method input of incorrect type', () => {
   const filterMethod = 48
   const filterValue = '80%'
 
-  expect(() => new PhotoFilter(filterMethod, filterValue)).toThrow('Invalid input')
+  expect(() => new PhotoFilter(filterMethod, filterValue)).toThrow('Invalid string')
 })
 
 test('Tests filter value input of incorrect type', () => {
   const filterMethod = 'contrast'
   const filterValue = false
 
-  expect(() => new PhotoFilter(filterMethod, filterValue)).toThrow('Invalid input')
+  expect(() => new PhotoFilter(filterMethod, filterValue)).toThrow('Invalid string')
 })
 
 test('Tests filter method and filter value input of correct type', () => {

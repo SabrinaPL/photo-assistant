@@ -20,3 +20,9 @@ for (let i = 0; i < images.length; i++) {
   }
   )
 }
+
+/* const galleryForm = document.getElementById('gallery')
+galleryForm.addEventListener('submit', (event) => {
+  event.preventDefault()
+  photoHandler.displayInGallery()
+}) */

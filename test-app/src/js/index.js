@@ -1,10 +1,12 @@
 // Starting point of the application.
 
-import { PhotoHandler } from './photoHandler.js'
+import { PhotoAssistant } from '../../../lib/photoAssistant/photoAssistant.js'
+import { PhotoHandler } from '../../../lib/photoAssistant/photoHandler.js'
 
 const images = document.querySelectorAll('img')
 
 const photoHandler = new PhotoHandler()
+const photoAssistant = new PhotoAssistant()
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener('click', (event) => {
@@ -16,7 +18,11 @@ for (let i = 0; i < images.length; i++) {
     const filterMethod = 'Contrast'
     const filterValue = '150%'
 
-    photoHandler.addFilter(filterMethod, filterValue)
+    // photoAssistant.filterPhotos(filterMethod, filterValue)
+
+    // Testing.
+    photoHandler.saveImageToStorage(images[i])
+    photoHandler.getImageFromStorage(images[i])
   }
   )
 }

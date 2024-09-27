@@ -23,12 +23,12 @@ test('Tests filter method and filter value input of correct type', () => {
   expect(photoFilter).toBeDefined()
 })
 
-test('Tests filtering an invalid imageUrl', () => {
-  const imageUrl = null
+test('Tests filtering an invalid image', () => {
+  const image = null
   const filterMethod = 'saturation'
   const filterValue = '50%'
 
   const photoFilter = new PhotoFilter(filterMethod, filterValue)
 
-  expect(() => photoFilter.runPhotoFilter(imageUrl)).toThrow('Invalid image')
+  expect(() => photoFilter.runPhotoFilter(image)).toThrow('Invalid image')
 })

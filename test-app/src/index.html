@@ -16,34 +16,51 @@
     <div id="choice-menu-container">
       <form id="choice-menu">
         <p>Select the photos you wish to edit and choose which filter effect you wish to apply:</p><br><br>
-        <input type="radio" id="exposure" checked>
-        <label for="exposure">Exposure</label>
-        <input type="radio" id="contrast">
+        <input type="radio" id="brightness" value="brightness" checked>
+        <label for="exposure">Brightness</label>
+        <input type="radio" id="contrast" value="contrast">
         <label for="contrast">Contrast</label>
-        <input type="radio" id="sepia">
+        <input type="radio" id="sepia" value="sepia">
         <label for="sepia">Sepia</label>
-        <input type="radio" id="grayscale">
+        <input type="radio" id="grayscale" value="grayscale">
         <label for="grayscale">Grayscale</label>
-        <input type="radio" id="opacity">
+        <input type="radio" id="opacity" value="opacity">
         <label for="opacity">Opacity</label>
-        <input type="radio" id="blur">
+        <input type="radio" id="blur" value="blur">
         <label for="blur">Blur</label><br><br>
         <input type="range" min="1" max="100" value="50" class="slider" id="filterValue"><br><br>
 
-        <button type="submit">Apply filter</button>
+        <p>Select how many columns you want the photo gallery to be displayed in:</p>
+
+        <input type="radio" id="twoCols" value="2">
+        <label for="twoCols">2</label>
+        <input type="radio" id="threeCols" value="3">
+        <label for="threeCols">3</label>
+        <input type="radio" id="fourCols" value="4">
+        <label for="fourCols">4</label>
+        <input type="radio" id="fiveCols" value="5">
+        <label for="fiveCols">5</label>
+        <input type="radio" id="sixCols" value="6">
+        <label for="sixCols">6</label><br><br>
+
+        <button type="submit" id="applyEffectsBtn">Display</button>
       </form>
     </div>
 
     <div id="photo-container">
-      <img src="images/arashiyama.jpg" alt="People on a street in Arashiyama, Japan">
-      <img src="images/deer.jpg" alt="Deer grooming each other">
-      <img src="images/fushimiinari.jpg" alt="Fushimi Inari temple, Japan">
-      <img src="images/kyoto.jpg" alt="Pagoda in Kyoto, Japan in sunset">
-      <img src="images/monkey.jpg" alt="A monkey">
       <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
-      <img src="images/tokyo.jpg" alt="Shibuya crossing in Tokyo, Japan">
-      <img src="images/yabusame.jpg" alt="Japanese horseback archer">
       <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
+      <img src="images/nagoya_castle.jpg" alt="Nagoya Castle, Japan">
+      <img src="images/osaka.jpg" alt="Glico man billboard in Dotonbori in Osaka, Japan">
+      <img src="images/tea.jpg" alt="Green tea being poured">
+      <img src="images/rooftop.jpg" alt="Rooftop of a traditional Japanese building, Japan">
+      <img src="images/sushi.jpg" alt="Sushi being served in omakase restaurant, Japan">
+      <img src="images/monkey.jpg" alt="A monkey">
+      <img src="images/waterfall.jpg" alt="A waterfall in Yamagata, Japan">
+    </div>
+
+    <div id="gallery-container">
+      <!-- Photo gallery to be appended here -->
     </div>
   </div>
 </body>

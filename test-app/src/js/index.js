@@ -3,28 +3,26 @@
 import { PhotoAssistant } from '../../../lib/photoAssistant/photoAssistant.js'
 
 const images = document.querySelectorAll('img')
+const choiceForm = document.getElementById('choice-menu')
 const photoAssistant = new PhotoAssistant()
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener('click', (event) => {
-    console.log('Image has been clicked')
-
     photoAssistant.addImage(images[i])
-
-    // Following code is added just for manual testing purposes:
-    photoAssistant.filterPhotos('contrast', '150%')
-
-    const columns = 2
-    const galleryContainer = document.getElementById('photo-container')
-
-    photoAssistant.displayPhotosInGallery(columns, galleryContainer)
   }
   )
 }
 
-const columns = 2
-const galleryContainer = document.getElementById('photo-container')
+choiceForm.addEventListener('submit', (event) => {
+  console.log('In btn event listener')
+  event.preventDefault()
 
-photoAssistant.displayPhotosInGallery(columns, galleryContainer)
+  document.getElementById('choice-menu').setAttribute('hidden', '')
+  document.getElementById('photo-container').setAttribute('hidden', '')
 
-// Add another event listener that listens to form submit event.
+  // Following code is added just for manual testing purposes:
+  photoAssistant.filterPhotos('contrast', '150%')
+  const columns = 3
+  const galleryContainer = document.getElementById('gallery-container')
+  photoAssistant.displayPhotosInGallery(columns, galleryContainer)
+})

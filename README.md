@@ -1,7 +1,13 @@
-# 1dv610-L2
+# Photo Assistant
 
-## Photo Assistant
+Photo Assistant is a low-dependency, light-weight library that provides photo editing, photo sorting and photo gallery displaying of HTML image elements. It also stores image data in local storage for easy access and retrieval.
 
-Library that should provide photo editing and photo gallery displaying functionality. USP is that both of these functionalities (editing and gallery displaying) are provided within the same lib, making it useful for a range of applications handling images such as photography portfolio websites, blogs, social media platforms etc.
+Photo Assistant's USP (unique selling point) is that it offers all of these features (editing, sorting and gallery displaying) within the same lib, making it useful for a range of applications handling images such as photography portfolio websites, blogs, social media platforms etc.
 
-### Installation guide
+## Installation guide
+
+## Usage guide
+
+## Images
+
+All images in the test application are owned by the author of this library (Sabrina Prichard-Lybeck, © Prichard Photography) and are not to be used without permission.

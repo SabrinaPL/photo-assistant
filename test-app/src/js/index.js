@@ -1,6 +1,7 @@
 // Starting point of the application.
 
 import { PhotoAssistant } from '../../../lib/photoAssistant/photoAssistant.js'
+import { PhotoCanvasCreator } from '../../../lib/utils/photoCanvasCreator.js'
 
 const images = document.querySelectorAll('img')
 const choiceForm = document.getElementById('choice-menu')
@@ -8,7 +9,9 @@ const photoAssistant = new PhotoAssistant()
 
 for (let i = 0; i < images.length; i++) {
   images[i].addEventListener('click', (event) => {
-    photoAssistant.addImage(images[i])
+    // photoAssistant.addImage(images[i])
+
+    photoAssistant.sortPhotos(images[i], 'newest')
   }
   )
 }

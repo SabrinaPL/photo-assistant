@@ -14,23 +14,27 @@
 
   <div id="wrapper">
     <div id="choice-menu-container">
-      <form id="choice-menu">
+      <form id="filter-image-form">
         <p>Select the photos you wish to edit and choose which filter effect you wish to apply:</p><br><br>
-        
-        <input type="radio" id="brightness" value="brightness" checked>
-        <label for="exposure">Brightness</label>
-        <input type="radio" id="contrast" value="contrast">
+
+        <input type="radio" name="filter" id="brightness" value="brightness" checked>
+        <label for="brightness">Brightness</label>
+        <input type="radio" name="filter" id="contrast" value="contrast">
         <label for="contrast">Contrast</label>
-        <input type="radio" id="sepia" value="sepia">
+        <input type="radio" name="filter" id="sepia" value="sepia">
         <label for="sepia">Sepia</label>
-        <input type="radio" id="grayscale" value="grayscale">
+        <input type="radio" name="filter" id="grayscale" value="grayscale">
         <label for="grayscale">Grayscale</label>
-        <input type="radio" id="opacity" value="opacity">
+        <input type="radio" name="filter" id="opacity" value="opacity">
         <label for="opacity">Opacity</label>
-        <input type="radio" id="blur" value="blur">
+        <input type="radio" name="filter" id="blur" value="blur">
         <label for="blur">Blur</label><br><br>
         <input type="range" min="1" max="100" value="50" class="slider" id="filterValue"><br><br>
 
+        <button type="submit" id="displayFilteredImageBtn">Display image</button>
+      </form><br><br>
+
+      <form id="gallery-form">
         <p>Select how many columns you want the photo gallery to be displayed in:</p>
 
         <input type="radio" id="twoCols" value="2">
@@ -44,29 +48,30 @@
         <input type="radio" id="sixCols" value="6">
         <label for="sixCols">6</label><br><br>
 
-        <button type="submit" id="applyEffectsBtn">Display</button>
+        <button type="submit" id="displayGalleryBtn">Display gallery</button>
       </form>
     </div>
+  </div>
 
-    <div id="photo-container">
-      <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
-      <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
-      <img src="images/nagoya_castle.jpg" alt="Nagoya Castle, Japan">
-      <img src="images/osaka.jpg" alt="Glico man billboard in Dotonbori in Osaka, Japan">
-      <img src="images/tea.jpg" alt="Green tea being poured">
-      <img src="images/rooftop.jpg" alt="Rooftop of a traditional Japanese building, Japan">
-      <img src="images/sushi.jpg" alt="Sushi being served in omakase restaurant, Japan">
-      <img src="images/monkey.jpg" alt="A monkey">
-      <img src="images/waterfall.jpg" alt="A waterfall in Yamagata, Japan">
-    </div>
+  <div id="photo-container">
+    <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
+    <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
+    <img src="images/nagoya_castle.jpg" alt="Nagoya Castle, Japan">
+    <img src="images/osaka.jpg" alt="Glico man billboard in Dotonbori in Osaka, Japan">
+    <img src="images/tea.jpg" alt="Green tea being poured">
+    <img src="images/rooftop.jpg" alt="Rooftop of a traditional Japanese building, Japan">
+    <img src="images/sushi.jpg" alt="Sushi being served in omakase restaurant, Japan">
+    <img src="images/monkey.jpg" alt="A monkey">
+    <img src="images/waterfall.jpg" alt="A waterfall in Yamagata, Japan">
+  </div>
 
-    <div id="canvas-container">
-      <!-- Photo canvas to be appended here -->
-    </div>
+  <div id="canvas-container">
+    <!-- Photo canvas to be appended here -->
+  </div>
 
-    <div id="gallery-container">
-      <!-- Photo gallery to be appended here -->
-    </div>
+  <div id="gallery-container">
+    <!-- Photo gallery to be appended here -->
+  </div>
   </div>
 
   <div id="return-to-top">

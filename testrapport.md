@@ -18,9 +18,9 @@ Manual testing done in the test-app (run in the browser with vite) and automatic
 
 Manual test in test-app by adding contrast of 150% to images and displaying them in a grid gallery of 3 columns. Test passed with expected result: images are displayed with the correct contrast and in the correct number of columns.
 
-![Gallery display and contrast test](./test/test-screenshots/gallery-contrast-test.png)
+![Gallery display and contrast test](./test/test-images/gallery-contrast-test.png)
 
-![Gallery display and contrast test](./test/test-screenshots/gallery-contrast-test2.png)
+![Gallery display and contrast test](./test/test-images/gallery-contrast-test2.png)
 
 --------------------------------------------
 
@@ -42,13 +42,27 @@ At first metadata was attempted to be extracted using the exif npm package, but 
 
 --------------------------------------------
 
-Manual testing of the photoCanvasCreator. Test failed: the canvas was not created and the image was not drawn on the canvas as expected. Issue is still to be resolved.
+Manual testing of the photoCanvasCreator. Test failed: the canvas was not created and the image was not drawn on the canvas as expected.
+
+After debugging the code and solving the issue, the test passed with the expected result: the image was drawn on the canvas with the same filter effect applied to it as the CSS filtered image (150% added contrast).
+
+### Before
+
+![Original image without filter effect](./test-app/src/images/nara.jpg)
+
+Original image without filter effect.
+
+### After
+
+![Canvas drawn image with filter effect](./test/test-images/nara-filtered.png)
+
+Canvas drawn image with filter effect.
 
 --------------------------------------------
 
 Unit testing of photoFilter and photoGallery. Tests all passed with expected result:
 
-![Unit testing of photoFilter and photoGallery](./test/test-screenshots/filter-gallery-unit-tests.png)
+![Unit testing of photoFilter and photoGallery](./test/test-images/filter-gallery-unit-tests.png)
 
 ## Points of improvement
 

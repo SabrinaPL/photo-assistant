@@ -9,14 +9,22 @@ img {
   margin: 0.5rem;
 }
 
-img:hover {
-  opacity: 60%;
-}
-
 #wrapper, 
 h1,
 h2 {
   text-align: center;
+}
+
+#return-to-top,
+a {
+  text-align: center;
+  color: cornsilk;
+  font-size: 1.2rem;
+  text-decoration: none;
+}
+
+a:hover {
+  color:crimson; 
 }
 
 #choice-menu-container {

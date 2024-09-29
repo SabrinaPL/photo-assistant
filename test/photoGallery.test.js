@@ -1,12 +1,5 @@
 import { PhotoGallery } from '../lib/photoAssistant/photoGallery'
 
-test('Tests grid template column value of incorrect type', () => {
-  const images = []
-  const columns = 2
-
-  expect(() => new PhotoGallery(images, columns)).toThrow('Invalid number')
-})
-
 test('Tests creating a photo gallery on an empty images array', () => {
   const images = []
   const columns = 2

@@ -30,5 +30,5 @@ test('Tests filtering an invalid image', () => {
 
   const photoFilter = new PhotoFilter(filterMethod, filterValue)
 
-  expect(() => photoFilter.runPhotoFilter(image)).toThrow('Invalid image')
+  expect(() => photoFilter._runPhotoFilter(image)).toThrow('Invalid image')
 })

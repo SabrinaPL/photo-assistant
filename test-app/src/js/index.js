@@ -24,8 +24,11 @@ choiceForm.addEventListener('submit', (event) => {
   // Following code is added just for manual testing purposes:
   photoAssistant.filterPhotos('contrast', '150%')
   // const columns = 3
-  const galleryContainer = document.getElementById('gallery-container')
+  // const galleryContainer = document.getElementById('gallery-container')
   // photoAssistant.displayPhotosInGallery(columns, galleryContainer)
 
-  photoAssistant.drawPhotosToCanvas(galleryContainer)
+  const canvasContainer = document.getElementById('canvas-container')
+  const canvasId = 'photoCanvas'
+
+  photoAssistant.drawPhotosToCanvas(canvasContainer, canvasId)
 })

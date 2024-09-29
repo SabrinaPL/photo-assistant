@@ -1,13 +1,75 @@
 # Photo Assistant
 
-Photo Assistant is a library that provides simple photo editing, photo sorting and photo gallery displaying of HTML image elements. It also stores image url in local storage for easy access and retrieval.
+Photo Assistant is a dependency-free library that provides simple photo editing and photo gallery displaying of HTML img elements functionality. It also stores image urls in local storage for easy access and retrieval and offers drawing of images on a canvas element.
 
-Photo Assistant's USP (unique selling point) is that it offers all of these features (editing and gallery displaying) within the same lib, making it useful for a range of applications handling images such as photography portfolio websites, blogs, social media platforms etc.
+Photo Assistant's USP (unique selling point) is that it offers all of these features within the same lib, making it useful for a range of applications handling images such as photography portfolio websites, blogs, social media platforms etc. It is also lightweight and easy to use.
 
 ## Installation guide
 
+To install Photo Assistant use the following command:
+
+```bash
+npm install photo-assistant
+```
+
 ## Usage guide
 
-## Images
+To use Photo Assistant, import the library into your project:
 
-All images in the test application are owned by the author of this library (Sabrina Prichard-Lybeck, © Prichard Photography) and are not to be used without permission.
+```javascript
+import { PhotoAssistant } from 'photo-assistant'
+```
+
+Then, create a new instance of the PhotoAssistant class:
+
+```javascript
+const photoAssistant = new PhotoAssistant()
+```
+
+### Edit photos
+
+
+
+### Display photos in a gallery
+
+### Store images in local storage
+
+### Draw images on a canvas element
+
+## Test application
+
+A test application is included in the library to demonstrate the features of Photo Assistant. To run the test application, clone the repository and run the following commands:
+
+```bash
+npm install
+npm run dev
+```
+
+## Unit tests
+
+Unit tests (Jest) are included in the library to test the features of Photo Assistant. To run the unit tests, clone the repository and run the following commands:
+
+```bash
+npm install
+npm run test
+```
+
+## Bug reports
+
+If you find a bug in the library, please open an issue on the GitHub repository to report it.
+
+## Contributing
+
+If you would like to contribute to the library, please open a pull request on the GitHub repository.
+
+## Credits
+
+This library was created by Sabrina Prichard-Lybeck.
+
+### Images
+
+All images in the test application are owned by the author of this library (© Prichard Photography) and are not to be used without permission.
+
+## License
+
+This library is licensed under the MIT license.

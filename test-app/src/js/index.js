@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('photo-container').setAttribute('hidden', '')
     document.getElementById('return-to-top').setAttribute('hidden', '')
 
-    photoAssistant.filterPhotos('saturation', '10%')
+    photoAssistant.filterPhotos('saturate', '40%')
 
     const canvasContainer = document.getElementById('canvas-container')
     const canvasId = 'photoCanvas'

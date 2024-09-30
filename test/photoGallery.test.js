@@ -1,3 +1,7 @@
+/**
+ * @author Sabrina Prichard-Lybeck <sp223kz@student.lnu.se>
+ * @version 1.0.0
+ */
 import { PhotoGallery } from '../lib/photoAssistant/photoGallery'
 
 test('Tests creating a photo gallery on an empty images array expecting images array cannot be null or empty error to be thrown', () => {

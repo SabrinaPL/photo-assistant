@@ -21,7 +21,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('photo-container').setAttribute('hidden', '')
     document.getElementById('return-to-top').setAttribute('hidden', '')
 
-    photoAssistant.filterPhotos('saturate', '40%')
+    photoAssistant.filterPhotos('grayscale', '200')
+    photoAssistant.sortPhotos()
 
     const canvasContainer = document.getElementById('canvas-container')
     const canvasId = 'photoCanvas'
@@ -36,8 +37,15 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('photo-container').setAttribute('hidden', '')
     document.getElementById('return-to-top').setAttribute('hidden', '')
 
-    const columns = 3
-    const galleryContainer = document.getElementById('gallery-container')
-    photoAssistant.displayPhotosInGallery(columns, galleryContainer)
+    const columnBtns = document.getElementsByName('columns')
+
+    for (let i = 0; i < columnBtns.length; i ++) {
+      if (columnBtns[i].checked) {
+        const columns = Number(columnBtns[i].value)
+
+        const galleryContainer = document.getElementById('gallery-container')
+        photoAssistant.displayPhotosInGallery(columns, galleryContainer)
+      }
+    }
   })
 })

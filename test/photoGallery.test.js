@@ -18,6 +18,3 @@ test('Tests creating a photo gallery with a null images array expecting images a
   expect(() => new PhotoGallery(images, columns)).toThrow('Images array cannot be null or empty')
 })
 
-// Tests empty array.
-
-// Tests that an instance of photoGallery is successfully initialized.

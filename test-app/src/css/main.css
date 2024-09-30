@@ -31,5 +31,13 @@ a:hover {
   margin-bottom: 3rem;
 }
 
+#displayFilteredImageBtn, 
+#displayGalleryBtn {
+  font-size: 1.1rem;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+
 
 

@@ -16,9 +16,9 @@
     <div id="choice-menu-container">
       <form id="filter-image-form">
         <h2>Add filter effect to photo</h2>
-        <p>Select a photo you wish to edit and choose which filter effect you wish to apply:</p><br><br>
+        <p>Select photo(s) you wish to edit and choose which filter effect you wish to apply:</p><br><br>
 
-        <input type="radio" name="filter" id="brightness" value="brightness" checked>
+        <input type="radio" name="filter" id="brightness" value="brightness">
         <label for="brightness">Brightness</label>
         <input type="radio" name="filter" id="contrast" value="contrast">
         <label for="contrast">Contrast</label>
@@ -30,16 +30,16 @@
         <label for="opacity">Opacity</label>
         <input type="radio" name="filter" id="blur" value="blur">
         <label for="blur">Blur</label><br><br>
-        <input type="range" min="1" max="100" value="50" class="slider" id="filterValue"><br><br>
+        <input type="range" min="0" max="400" value="100" class="slider" id="filterValue"><br><br>
 
-        <button type="submit" id="displayFilteredImageBtn">Display image</button>
+        <button type="submit" id="displayFilteredImageBtn">Display images</button>
       </form><br><br>
 
       <form id="gallery-form">
         <h2>Create a photo gallery</h2>
         <p>Select the photos you wish to display in the gallery and how many columns the gallery should have:</p>
 
-        <input type="radio" name="columns" id="twoCols" value="2" checked>
+        <input type="radio" name="columns" id="twoCols" value="2">
         <label for="twoCols">2</label>
         <input type="radio" name="columns" id="threeCols" value="3">
         <label for="threeCols">3</label>

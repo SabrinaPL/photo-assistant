@@ -21,8 +21,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('photo-container').setAttribute('hidden', '')
     document.getElementById('return-to-top').setAttribute('hidden', '')
 
-    photoAssistant.filterPhotos('grayscale', '200')
-    photoAssistant.sortPhotos()
+    photoAssistant.startPhotoFilter()
+    photoAssistant.choseFiltersToAdd('grayscale', '200')
+    photoAssistant.choseFiltersToAdd('contrast', '120')
+    photoAssistant.choseFiltersToAdd('blur', '5')
+    photoAssistant.applyChosenFilters()
 
     const canvasContainer = document.getElementById('canvas-container')
     const canvasId = 'photoCanvas'

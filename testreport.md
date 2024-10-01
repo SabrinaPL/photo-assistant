@@ -31,8 +31,6 @@ Manual testing done in the test-app (run in the browser with vite) and automatic
 | 30th Sep 2024        | Manual test in test-app of applying opacity filter effect (40%) to image drawn on canvas.                                                                                                         | Opacity effect being applied to the image on the canvas.                                                                         | Passed with expected result.                                                                                               | I'm not sure why the opacity is visible on the canvas this time, without needing to open up a new tab. Could have possibly been a browser issue during the previous test?                               |
 | 1st Oct 2024         | Manual test in test-app to see if sorting of images (in alphabetical order) in `photoSort` class is successful.                                                                                                    | Images to be sorted in alphabetical order based on their alt descriptions.                                                                         | Passed with expected result.                                                                                               |                               |
 
-![Image sorting test](./test/test-images/sorting-img-test.png)
-
 --------------------------------------------
 
 ### Screenshots of test results from manual testing in the test-app
@@ -64,6 +62,14 @@ Canvas drawn images with filter effects (blur, grayscale, brightness, opacity, c
 Result of adding saturation filter effect (40%) to image drawn on canvas after debugging and fixing the issue:
 
 ![Canvas drawn image with saturation filter effect](./test/test-images/nara-saturate.png)
+
+Result of adding multiple filter effects to an image (grayscale of 200%, contrast of 120% & blur of 5px):
+
+![Test adding multiple filters](./test/test-images/multiple-filters-test.png)
+
+Result of image sorting test:
+
+![Image sorting test](./test/test-images/sorting-img-test.png)
 
 --------------------------------------------
 

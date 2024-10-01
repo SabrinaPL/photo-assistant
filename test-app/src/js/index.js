@@ -10,8 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
     images[i].addEventListener('click', (event) => {
       photoAssistant.addImage(images[i])
       images[i].style.filter = 'opacity(40%)'
-    }
-    )
+    })
   }
 
   filterImageForm.addEventListener('submit', (event) => {
@@ -41,6 +40,8 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('return-to-top').setAttribute('hidden', '')
 
     const columnBtns = document.getElementsByName('columns')
+
+    // photoAssistant.sortPhotos()
 
     for (let i = 0; i < columnBtns.length; i ++) {
       if (columnBtns[i].checked) {

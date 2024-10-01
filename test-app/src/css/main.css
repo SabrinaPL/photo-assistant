@@ -32,7 +32,8 @@ a:hover {
 }
 
 #displayFilteredImageBtn, 
-#displayGalleryBtn {
+#displayGalleryBtn,
+#addFiltersBtn {
   font-size: 1.1rem;
   padding: 0.5rem;
   border-radius: 0.5rem;

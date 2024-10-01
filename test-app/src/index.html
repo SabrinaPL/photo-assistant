@@ -11,12 +11,26 @@
 
 <body>
   <h1>Photo Assistant</h1>
+  <h2>Select the photo(s) you wish to edit or display in a gallery:</h2>
 
+  <div id="photo-container">
+    <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
+    <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
+    <img src="images/nagoya_castle.jpg" alt="Nagoya Castle, Japan">
+    <img src="images/osaka.jpg" alt="Glico man billboard in Dotonbori in Osaka, Japan">
+    <img src="images/tea.jpg" alt="Green tea being poured">
+    <img src="images/rooftop.jpg" alt="Rooftop of a traditional Japanese building, Japan">
+    <img src="images/sushi.jpg" alt="Sushi being served in omakase restaurant, Japan">
+    <img src="images/monkey.jpg" alt="A monkey">
+    <img src="images/waterfall.jpg" alt="A waterfall in Yamagata, Japan">
+  </div>
+
+  
   <div id="wrapper">
     <div id="choice-menu-container">
       <form id="filter-image-form">
-        <h2>Add filter effect to photo</h2>
-        <p>Select photo(s) you wish to edit and choose which filter effect you wish to apply:</p><br><br>
+        <h2>Add filter effect to photos</h2>
+        <p>Select the filter effect and filter value of the filter(s) you wish to apply and add them with the 'add filter' button. Then display the edited images with the 'display' button.</p>
 
         <input type="radio" name="filter" id="brightness" value="brightness">
         <label for="brightness">Brightness</label>
@@ -30,14 +44,16 @@
         <label for="opacity">Opacity</label>
         <input type="radio" name="filter" id="blur" value="blur">
         <label for="blur">Blur</label><br><br>
-        <input type="range" min="0" max="400" value="100" class="slider" id="filterValue"><br><br>
+        <label for="filterValue">Add filter value:</label>
+        <input type="text" name="filterValue" id="filterValue"> % (px for blur)<br><br>
 
-        <button type="submit" id="displayFilteredImageBtn">Display images</button>
+        <button type="add-filter" id="addFiltersBtn">Add filter</button><br><br>
+        <button type="submit" id="displayFilteredImageBtn">Display</button>
       </form><br><br>
 
       <form id="gallery-form">
-        <h2>Create a photo gallery</h2>
-        <p>Select the photos you wish to display in the gallery and how many columns the gallery should have:</p>
+        <h2>Display photos in gallery</h2>
+        <p>Select how many columns the gallery should have:</p>
 
         <input type="radio" name="columns" id="twoCols" value="2">
         <label for="twoCols">2</label>
@@ -50,21 +66,10 @@
         <input type="radio" name="columns" id="sixCols" value="6">
         <label for="sixCols">6</label><br><br>
 
-        <button type="submit" id="displayGalleryBtn">Display gallery</button>
+        <button type="submit" id="displayGalleryBtn">Display</button>
+        <p><em>Images will be displayed in alphabetical order (based on their alt descriptions)</em></p>
       </form>
     </div>
-  </div>
-
-  <div id="photo-container">
-    <img src="images/nara.jpg" alt="Deer on a street in Nara, Japan">
-    <img src="images/yamagata.jpg" alt="Volcano crater in Yamagata, Japan">
-    <img src="images/nagoya_castle.jpg" alt="Nagoya Castle, Japan">
-    <img src="images/osaka.jpg" alt="Glico man billboard in Dotonbori in Osaka, Japan">
-    <img src="images/tea.jpg" alt="Green tea being poured">
-    <img src="images/rooftop.jpg" alt="Rooftop of a traditional Japanese building, Japan">
-    <img src="images/sushi.jpg" alt="Sushi being served in omakase restaurant, Japan">
-    <img src="images/monkey.jpg" alt="A monkey">
-    <img src="images/waterfall.jpg" alt="A waterfall in Yamagata, Japan">
   </div>
 
   <div id="canvas-container">

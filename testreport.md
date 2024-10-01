@@ -29,6 +29,9 @@ Manual testing done in the test-app (run in the browser with vite) and automatic
 | 29th Sep 2024        | Manual test in test-app of applying additional filter effects (brightness, grayscale, blur, sepia, saturation, opacity) to an image drawn on the canvas.                                                                                                             | All filter effects are applied to the image on the canvas.                                                                         | Most tests passed, but opacity and saturation failed.                                                                                                 | Opacity effect was visible after viewing the image in another tab. Saturation did not appear at all. Need to investigate these two issues further.                                            |
 | 30th Sep 2024        | Manual test in test-app of applying saturation filter effect (40%) to image drawn on canvas.                                                                                                         | Saturation effect being applied to the image on the canvas.                                                                         | Passed with expected result.                                                                                               | When debugging I found that I had spelled the filter effect as 'saturation' instead of the correct 'saturate', which is why the effect wasn't applied during previous testing.                                  |
 | 30th Sep 2024        | Manual test in test-app of applying opacity filter effect (40%) to image drawn on canvas.                                                                                                         | Opacity effect being applied to the image on the canvas.                                                                         | Passed with expected result.                                                                                               | I'm not sure why the opacity is visible on the canvas this time, without needing to open up a new tab. Could have possibly been a browser issue during the previous test?                               |
+| 1st Oct 2024         | Manual test in test-app to see if sorting of images (in alphabetical order) in `photoSort` class is successful.                                                                                                    | Images to be sorted in alphabetical order based on their alt descriptions.                                                                         | Passed with expected result.                                                                                               |                               |
+
+![Image sorting test](./test/test-images/sorting-img-test.png)
 
 --------------------------------------------
 
@@ -69,7 +72,3 @@ Result of adding saturation filter effect (40%) to image drawn on canvas after d
 ![Unit testing of photoFilter and photoGallery](./test/test-images/filter-gallery-unit-tests.png)
 
 ![Unit testing of photoStorage](./test/test-images/photoStorage-unit-tests.png)
-
-## Points of improvement
-
-## Test analysis

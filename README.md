@@ -26,13 +26,15 @@ Then, create a new instance of the PhotoAssistant class:
 const photoAssistant = new PhotoAssistant()
 ```
 
-### Edit photos
-
-### Display photos in a gallery
-
-### Store images in local storage
+### Edit photos by adding filters
 
 ### Draw images on a canvas element
+
+### Display photos in a grid gallery
+
+### Sort photos by alphabetical order based on img alt
+
+### Store images in and retrieve images from local storage
 
 ## Test application
 

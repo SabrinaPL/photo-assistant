@@ -19,11 +19,26 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('choice-menu-container').setAttribute('hidden', '')
     document.getElementById('photo-container').setAttribute('hidden', '')
     document.getElementById('return-to-top').setAttribute('hidden', '')
+    document.querySelector('h2').setAttribute('hidden', '')
+
+    const filterBtns = document.getElementsByName('filter')
+    const filterValueInput = document.getElementById('filterValue')
+    
+    let filterMethod = ''
+
+    for (let i = 0; i < filterBtns.length; i ++) {
+      if (filterBtns[i].checked) {
+        filterMethod = filterBtns[i].value.toString()
+      }
+    }
+
+    const imgAlt = 'Glico man billboard in Dotonbori in Osaka, Japan'
+    photoAssistant.getStoredPhoto(imgAlt)
+
+    const filterValue = filterValueInput.value.toString()
 
     photoAssistant.startPhotoFilter()
-    photoAssistant.choseFiltersToAdd('grayscale', '200')
-    photoAssistant.choseFiltersToAdd('contrast', '120')
-    photoAssistant.choseFiltersToAdd('blur', '5')
+    photoAssistant.chosenFiltersToAdd(filterMethod, filterValue)
     photoAssistant.applyChosenFilters()
 
     const canvasContainer = document.getElementById('canvas-container')
@@ -38,10 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('choice-menu-container').setAttribute('hidden', '')
     document.getElementById('photo-container').setAttribute('hidden', '')
     document.getElementById('return-to-top').setAttribute('hidden', '')
+    document.querySelector('h2').setAttribute('hidden', '')
 
     const columnBtns = document.getElementsByName('columns')
 
-    // photoAssistant.sortPhotos()
+    photoAssistant.sortPhotos()
 
     for (let i = 0; i < columnBtns.length; i ++) {
       if (columnBtns[i].checked) {

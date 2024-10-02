@@ -5,7 +5,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="stylesheet" type="text/css" href="./css/main.css" />
-  <title>Photo Editor</title>
+  <title>Photo Assistant</title>
   <script type="module" src="js/index.js"></script>
 </head>
 
@@ -30,7 +30,7 @@
     <div id="choice-menu-container">
       <form id="filter-image-form">
         <h2>Add filter effect to photos</h2>
-        <p>Select the filter effect and filter value of the filter(s) you wish to apply and add them with the 'add filter' button. Then display the edited images with the 'display' button.</p>
+        <p>Select the filter effect and input filter value of the filter you wish to apply:</p>
 
         <input type="radio" name="filter" id="brightness" value="brightness" checked>
         <label for="brightness">Brightness</label>
@@ -42,12 +42,13 @@
         <label for="grayscale">Grayscale</label>
         <input type="radio" name="filter" id="opacity" value="opacity">
         <label for="opacity">Opacity</label>
+        <input type="radio" name="filter" id="blur" value="saturate">
+        <label for="blur">Saturation</label>
         <input type="radio" name="filter" id="blur" value="blur">
         <label for="blur">Blur</label><br><br>
         <label for="filterValue">Add filter value:</label>
         <input type="text" name="filterValue" id="filterValue"> % (px for blur)<br><br>
 
-        <button type="add-filter" id="addFiltersBtn">Add filter</button><br><br>
         <button type="submit" id="displayFilteredImageBtn">Display</button>
       </form><br><br>
 

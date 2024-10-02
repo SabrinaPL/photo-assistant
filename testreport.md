@@ -90,3 +90,9 @@ Images displayed in gallery in alphabetical order:
 ![Unit testing of photoFilter and photoGallery](./test/test-images/filter-gallery-unit-tests.png)
 
 ![Unit testing of photoStorage](./test/test-images/photoStorage-unit-tests.png)
+
+Final unit testing results (unit tests have also been updated to test the updated code):
+
+![Final unit testing results](./test/test-images/unit-test-results.png)
+
+![Final unit testing results](./test/test-images/unit-test-results2.png)

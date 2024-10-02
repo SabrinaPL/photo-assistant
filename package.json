@@ -6,6 +6,10 @@
   "directories": {
     "lib": "lib"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SabrinaPL/photo-assistant.git"
+  },
   "scripts": {
     "dev": "vite",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --verbose"

@@ -12,7 +12,7 @@ Manual testing (expected result) and automatic unit testing.
 
 ## Testing environment
 
-Manual testing done in the test-app (run in the browser with vite) and automatic testing done with Jest.
+Manual testing done in the test-app (run in the browser with Vite) and automatic testing done with Jest.
 
 ## Test cases (manual testing) and result
 
@@ -34,6 +34,7 @@ Manual testing done in the test-app (run in the browser with vite) and automatic
 | 1st Oct 2024         | Manual test in test-app of adding multiple filter effects to an image.                                                                                           | Images to be edited with all of the chosen filter effects.                                                                        | Passed with expected result.                                                                                              |  Fixed the issue described in the previous test case by creating a method to concatenate a string and using it to apply all the filter effects to the the image style at once.                       |
 | 1st Oct 2024         | Manual test in test-app of displaying images in original order, after having added logic to be able to display them in alphabetical order.                                                                                        | Images to be displayed in a 3 column grid gallery in original order that they were selected.                                                          | Failed.                                                                                             |  When debugging I found that I have missed to add .length to the control statement in the `PhotoAssistant` class that checks if images from sortedImages array should be displayed in gallery or from the original, unordered images array.                      |
 | 1st Oct 2024         | Manual test in test-app of displaying images in original order, after having added logic to be able to display them in alphabetical order.                                                                                        | Images to be displayed in a 3 column grid gallery in original order that they were selected.                                                          | Passed with expected result.                                                                                             |  Fixed the issue described in the previous test case.                     |
+| 2nd Oct 2024         | Manual test in test-app of retrieving image from storage with `getStoredPhoto` method in `PhotoAssistant` class after adding return statement.                                                                                     | Correct image to be retrieved from local storage and returned.                                                    | Passed with expected result.                                                                                             |                    |
 
 --------------------------------------------
 

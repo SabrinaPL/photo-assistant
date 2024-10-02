@@ -1,6 +1,6 @@
 # Photo Assistant
 
-Photo Assistant is a dependency-free library written in vanilla JavaScript that provides simple photo editing, photo sorting (alphabetically based on img alt) and photo gallery displaying of HTML img elements. It also stores image urls in local storage for easy access and retrieval and offers drawing of edited images on a canvas element to enable saving of edited images.
+Photo Assistant is a dependency-free library written in vanilla JavaScript (ES6) that provides simple photo editing, photo sorting (alphabetically based on img alt) and photo gallery displaying of HTML img elements. It also stores image urls in local storage for easy access and retrieval and offers drawing of edited images on a canvas element to enable saving of edited images.
 
 Photo Assistant's USP (unique selling point) is that it offers all of these features within the same library, making it useful for a range of applications handling images such as photography portfolio websites, blogs, social media platforms etc. It is also lightweight and easy to use.
 

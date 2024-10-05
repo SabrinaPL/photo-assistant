@@ -40,14 +40,17 @@ document.addEventListener {
 }
 ```
 
+! `img alt` description is **required** to add and handle images with PhotoAssistant !
+
 ### Edit photos by adding filters
 
 PhotoAssistant allows adding of a single or multiple CSS filters to an image at a time.
 
-To filter images that have been added to PhotoAssistant (se previous instruction on how to get started) you need to first invoke the `startPhotoFilter()` method, which will create an instance of PhotoFilter(). Then add a single or multiple filters with the `chosenFiltersToAdd(filterMethod, filterValue)` method. Finally, apply the chosen filters to the images:
+![Image with filters added](./test/test-images/photoAssistantFilters.jpg)
+
+To filter images that have been added to PhotoAssistant you add a single or multiple filters with the `chosenFiltersToAdd(filterMethod, filterValue)` method and then apply the chosen filters to the images:
 
 ```javascript
-photoAssistant.startPhotoFilter()
 
 photoAssistant.chosenFiltersToAdd(filterMethod, filterValue)
 
@@ -70,7 +73,6 @@ let filterMethod = ''
 
 const filterValue = filterValueInput.value.toString()
 
-    photoAssistant.startPhotoFilter()
     photoAssistant.chosenFiltersToAdd(filterMethod, filterValue)
     photoAssistant.applyChosenFilters()
 ```
@@ -97,7 +99,11 @@ For more information about CSS filters view the documentation:
 
 ### Draw images on a canvas element
 
-Draw an image that has been filtered to a canvas element using PhotoAssistant by invoking the `drawPhotosToCanvas(appendCanvasTo, canvasId)` method. An HTML element to which the canvas element will be appended is sent as the first argument and you give the canvas an id with the second argument.
+Draw an image that has been filtered to a canvas element using PhotoAssistant by invoking the `drawPhotosToCanvas(appendCanvasTo, canvasId)` method.
+
+![Example of image drawn to canvas](./test/test-images/nara-filtered.png)
+
+An HTML element to which the canvas element will be appended is sent as the first argument and you give the canvas an id with the second argument.
 
 ```javascript
   // After filtering images.
@@ -117,6 +123,8 @@ To sort photos (alphabetically based on their alt descriptions) you invoke the `
 ```
 
 ### Display photos in a grid gallery
+
+![Images displayed in a grid gallery](./test/test-images/gallery-in-original-order.png)
 
 To display photos in a grid gallery the `displayPhotosInGallery(columns, galleryContainer)` method is used.
 

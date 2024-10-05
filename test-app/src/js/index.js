@@ -1,5 +1,7 @@
 import { PhotoAssistant } from '../../../lib/photoAssistant/photoAssistant.js'
 
+// Add comments to explain the demo code:
+
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img')
   const filterImageForm = document.getElementById('filter-image-form')
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filterValue = filterValueInput.value.toString()
 
-    photoAssistant.startPhotoFilter()
     photoAssistant.chosenFiltersToAdd(filterMethod, filterValue)
     photoAssistant.applyChosenFilters()
 

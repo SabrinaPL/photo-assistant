@@ -29,7 +29,7 @@ const photoAssistant = new PhotoAssistant()
 To handle photos you need to first add images to PhotoAssistant with the `addImage` method which takes an `HTMLImageElement` as parameter. This could for example be achieved by adding event listeners that listen to click events on image elements already in the document:
 
 ```javascript
-document.addEventListener {
+document.addEventListener ('click', (event) => {
   const images = document.querySelectorAll('img')
 
   for (let i = 0; i < images.length; i++) {
@@ -37,7 +37,7 @@ document.addEventListener {
       photoAssistant.addImage(images[i])
     })
   }
-}
+})
 ```
 
 ! `img alt` description is **required** to add and handle images with PhotoAssistant !

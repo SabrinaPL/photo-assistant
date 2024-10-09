@@ -1,4 +1,4 @@
-import { PhotoAssistant } from '../../../lib/photoAssistant/photoAssistant.js'
+import { PhotoAssistantOrchestrator } from '../../../lib/photoAssistant/photoAssistantOrchestrator.js'
 
 // Add comments to explain the demo code:
 

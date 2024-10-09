@@ -43,7 +43,6 @@ test('Tests filter value input of incorrect type expecting invalid string error 
 test('Tests filter method and filter value input of correct type', () => {
   const filterMethod = 'contrast'
   const filterValue = '80%'
-
   const photoFilter = new PhotoFilter()
 
   photoFilter._runAddFilters(filterMethod, filterValue)
@@ -55,7 +54,6 @@ test('Tests filtering an invalid image expecting invalid image error to be throw
   const image = null
   const filterMethod = 'saturation'
   const filterValue = '50%'
-
   const photoFilter = new PhotoFilter()
 
   photoFilter._runAddFilters(filterMethod, filterValue)

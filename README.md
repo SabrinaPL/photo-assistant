@@ -1,6 +1,6 @@
 # Photo Assistant
 
-Photo Assistant is a dependency-free library written in vanilla JavaScript (ES6) that provides simple photo editing, photo sorting (alphabetically based on img alt) and photo gallery displaying of HTML img elements. It also stores image urls in local storage for easy access and retrieval and offers drawing of edited images on a canvas element to enable saving of edited images.
+Photo Assistant is a dependency-free library written in vanilla JavaScript (ES6) that provides simple photo editing, photo sorting (alphabetically based on img alt) and photo gallery displaying of HTML img elements. It also stores image urls in local storage for easy access and retrieval and offers drawing of edited images onto a canvas element to enable saving of edited images.
 
 Photo Assistant's USP (unique selling point) is that it offers all of these features within the same library, making it useful for a range of applications handling images such as photography portfolio websites, blogs, social media platforms etc. It is also lightweight and easy to use.
 
@@ -14,16 +14,16 @@ npm install photo-assistant
 
 ## Usage guide
 
-To use Photo Assistant, import the library into your project:
+To use Photo Assistant, import the library orchestrator into your project:
 
 ```javascript
-import { PhotoAssistant } from 'photo-assistant'
+import { PhotoAssistantOrchestrator } from 'photo-assistant'
 ```
 
-Then, create a new instance of the PhotoAssistant class:
+Then, create a new instance of the PhotoAssistantOrchestrator class:
 
 ```javascript
-const photoAssistant = new PhotoAssistant()
+const photoAssistant = new PhotoAssistantOrchestrator()
 ```
 
 To handle photos you need to first add images to PhotoAssistant with the `addImage` method which takes an `HTMLImageElement` as parameter. This could for example be achieved by adding event listeners that listen to click events on image elements already in the document:
@@ -98,6 +98,8 @@ For more information about CSS filters view the documentation:
 [CSS filter MDN documentation](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
 
 ### Draw images on a canvas element
+
+TO DO: ADD MORE INFO ABOUT THE HTML CANVAS ELEMENT
 
 Draw an image that has been filtered to a canvas element using PhotoAssistant by invoking the `drawPhotosToCanvas(appendCanvasTo, canvasId)` method.
 

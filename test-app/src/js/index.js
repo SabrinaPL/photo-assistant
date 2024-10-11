@@ -6,11 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img')
   const filterImageForm = document.getElementById('filter-image-form')
   const galleryForm = document.getElementById('gallery-form')
-  const photoAssistant = new PhotoAssistant()
+  const photoAssistant = new PhotoAssistantOrchestrator()
 
   for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', (event) => {
-      photoAssistant.addImage(images[i])
+      photoAssistant.saveImage(images[i])
       images[i].style.filter = 'opacity(40%)'
     })
   }

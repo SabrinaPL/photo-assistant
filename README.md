@@ -99,13 +99,15 @@ For more information about CSS filters view the documentation:
 
 ### Draw images on a canvas element
 
-TO DO: ADD MORE INFO ABOUT THE HTML CANVAS ELEMENT
-
 Draw an image that has been filtered to a canvas element using PhotoAssistant by invoking the `drawPhotosToCanvas(appendCanvasTo, canvasId)` method.
 
 ![Example of image drawn to canvas](./test/test-images/nara-filtered.png)
 
 An HTML element to which the canvas element will be appended is sent as the first argument and you give the canvas an id with the second argument.
+
+For more information about the Canvas API view the documentation:
+
+[Canvas API MDN documentation](https://developer.mozilla.org/en-US/docs/Web/API/Canvas_API)
 
 ```javascript
   // After filtering images.

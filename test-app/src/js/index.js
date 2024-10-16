@@ -1,14 +1,16 @@
-import { PhotoAssistant } from '../../../lib/photoAssistant/photoAssistant.js'
+import { PhotoAssistantOrchestrator } from '../../../lib/photoAssistant/photoAssistantOrchestrator.js'
+
+// Add comments to explain the demo code:
 
 document.addEventListener('DOMContentLoaded', () => {
   const images = document.querySelectorAll('img')
   const filterImageForm = document.getElementById('filter-image-form')
   const galleryForm = document.getElementById('gallery-form')
-  const photoAssistant = new PhotoAssistant()
+  const photoAssistant = new PhotoAssistantOrchestrator()
 
   for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', (event) => {
-      photoAssistant.addImage(images[i])
+      photoAssistant.saveImage(images[i])
       images[i].style.filter = 'opacity(40%)'
     })
   }
@@ -37,7 +39,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const filterValue = filterValueInput.value.toString()
 
-    photoAssistant.startPhotoFilter()
     photoAssistant.chosenFiltersToAdd(filterMethod, filterValue)
     photoAssistant.applyChosenFilters()
 

@@ -26,7 +26,7 @@ Then, create a new instance of the PhotoAssistantOrchestrator class:
 const photoAssistant = new PhotoAssistantOrchestrator()
 ```
 
-To handle photos you need to first add images to PhotoAssistant with the `addImage` method which takes an `HTMLImageElement` as parameter. This could for example be achieved by adding event listeners that listen to click events on image elements already in the document:
+To handle photos you need to first add images to PhotoAssistant with the `saveImage` method which takes an `HTMLImageElement` as parameter. This could for example be achieved by adding event listeners that listen to click events on image elements already in the document:
 
 ```javascript
 document.addEventListener ('click', (event) => {
@@ -34,7 +34,7 @@ document.addEventListener ('click', (event) => {
 
   for (let i = 0; i < images.length; i++) {
     images[i].addEventListener('click', (event) => {
-      photoAssistant.addImage(images[i])
+      photoAssistant.saveImage(images[i])
     })
   }
 })
